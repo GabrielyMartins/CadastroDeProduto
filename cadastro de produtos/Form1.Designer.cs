@@ -136,6 +136,7 @@
             // 
             // tx_venda
             // 
+            this.tx_venda.Enabled = false;
             this.tx_venda.Location = new System.Drawing.Point(209, 165);
             this.tx_venda.Name = "tx_venda";
             this.tx_venda.Size = new System.Drawing.Size(100, 20);
@@ -143,21 +144,23 @@
             // 
             // bt_novo
             // 
-            this.bt_novo.Location = new System.Drawing.Point(345, 203);
+            this.bt_novo.Location = new System.Drawing.Point(349, 203);
             this.bt_novo.Name = "bt_novo";
             this.bt_novo.Size = new System.Drawing.Size(75, 23);
             this.bt_novo.TabIndex = 11;
             this.bt_novo.Text = "Novo";
             this.bt_novo.UseVisualStyleBackColor = true;
+            this.bt_novo.Click += new System.EventHandler(this.bt_novo_Click);
             // 
             // bt_cadastrar
             // 
-            this.bt_cadastrar.Location = new System.Drawing.Point(448, 203);
+            this.bt_cadastrar.Location = new System.Drawing.Point(457, 203);
             this.bt_cadastrar.Name = "bt_cadastrar";
             this.bt_cadastrar.Size = new System.Drawing.Size(75, 23);
             this.bt_cadastrar.TabIndex = 12;
             this.bt_cadastrar.Text = "Cadastrar";
             this.bt_cadastrar.UseVisualStyleBackColor = true;
+            this.bt_cadastrar.Click += new System.EventHandler(this.bt_cadastrar_Click);
             // 
             // bt_cancelar
             // 
@@ -165,13 +168,14 @@
             this.bt_cancelar.Name = "bt_cancelar";
             this.bt_cancelar.Size = new System.Drawing.Size(75, 23);
             this.bt_cancelar.TabIndex = 13;
-            this.bt_cancelar.Text = "Cancelar";
+            this.bt_cancelar.Text = "Excluir";
             this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(146, 260);
+            this.dataGridView1.Location = new System.Drawing.Point(125, 270);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(508, 150);
             this.dataGridView1.TabIndex = 14;
